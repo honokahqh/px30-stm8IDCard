@@ -1,0 +1,111 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-1806121354
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Breakpoints2]
+Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\..\APP\main.c}.24.3" 0 0 1 "" 0 ""
+Count=1
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=16000000
+[array_types]
+Fmt0=u16[2]	4	0
+Fmt1=u8[4]	4	0
+Fmt2=uint8_t[16]	4	0
+Fmt3=uint8_t[32]	4	0
+Fmt4=uint8_t[64]	4	0
+Fmt5=uint8_t[8]	4	0
+[DataSample]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$}.116.3" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$}.228.3" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$}.238.2" 0 0 0 0 "" 0 ""
+Count=3
+[Aliases]
+A0=_ "F:\Draven\Z8附属模块\房态灯\新版\BSP\bsp_rgb.c" ""
+A1=_ "F:\Draven\房态灯\房态灯APP版本\APP\app.c" ""
+A2=_ "F:\Draven\房态灯\房态灯APP版本\APP\main.c" ""
+A3=_ "F:\Draven\房态灯\房态灯APP版本\BSP\bsp_clock.c" ""
+A4=_ "F:\Draven\房态灯\房态灯APP版本\BSP\bsp_dog.c" ""
+A5=_ "F:\Draven\房态灯\房态灯APP版本\BSP\bsp_rgb.c" ""
+A6=_ "F:\Draven\房态灯\房态灯APP版本\BSP\bsp_stEEPROM.c" ""
+A7=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_Core.c" ""
+A8=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_Function.c" ""
+A9=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_Map.c" ""
+A10=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_Memory.c" ""
+A11=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_Str.c" ""
+A12=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\MBS_User.c" ""
+A13=_ "F:\Draven\房态灯\房态灯APP版本\MB_Slaver\PhysicalDrive\STM8usart1.c" ""
+A14=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\APP\app.c" ""
+A15=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\APP\main.c" ""
+A16=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\APP\stm8s_exti.c" ""
+A17=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\APP\stm8s_gpio.c" ""
+A18=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\APP\stm8s_tim2.c" ""
+A19=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\BSP\bsp_Manchester.c" ""
+A20=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\BSP\bsp_clock.c" ""
+A21=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\BSP\bsp_rgb.c" ""
+A22=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\MB_Slaver\MBS_Function.c" ""
+A23=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\MB_Slaver\MBS_Memory.c" ""
+A24=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\MB_Slaver\MBS_Str.c" ""
+A25=_ "G:\1办公\1.Z8模块\房态灯-rfid\房态灯_RFID 程序 -2018-8-28\MB_Slaver\MBS_User.c" ""
+Count=26
+SuppressDialog=0
+[DebuggerSettings]
+DisableInterruptsWhenStepping=0

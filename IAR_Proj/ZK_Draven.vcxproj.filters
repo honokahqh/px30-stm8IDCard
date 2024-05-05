@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="APP">
+      <UniqueIdentifier>{06D2870B-72DB-877C-FB56-9E7C675F937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BSP">
+      <UniqueIdentifier>{AAD6870B-16E0-877C-9F5B-9E7C0B64937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTOS">
+      <UniqueIdentifier>{6D768B7C-59AD-8C0D-029A-7210EEAF080F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MB_Slaver">
+      <UniqueIdentifier>{4ca0d9ce-e23e-4b07-a150-21ea750931d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\APP\app.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s_conf.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s_it.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp_clock.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ProtoOS\lc.h">
+      <Filter>RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ProtoOS\lc-addrlabels.h">
+      <Filter>RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ProtoOS\lc-switch.h">
+      <Filter>RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ProtoOS\pt.h">
+      <Filter>RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ProtoOS\pt-sem.h">
+      <Filter>RTOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MB_Slaver\modbusSlaver.h">
+      <Filter>MB_Slaver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MB_Slaver\PhysicalDrive\STM8usart1.h">
+      <Filter>MB_Slaver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\appValue.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp_rgb.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp_dog.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\upData.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp_stEEPROM.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BSP\bsp_Manchester.H">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s_exti.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s_gpio.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\APP\stm8s_tim2.h">
+      <Filter>APP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\APP\app.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\main.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\stm8s_it.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp_clock.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Core.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Function.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Map.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Memory.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Physical.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Port.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_Str.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\MBS_User.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MB_Slaver\PhysicalDrive\STM8usart1.c">
+      <Filter>MB_Slaver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\appValue.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp_rgb.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp_dog.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\upData.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp_stEEPROM.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BSP\bsp_Manchester.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\stm8s_exti.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\stm8s_gpio.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\APP\stm8s_tim2.c">
+      <Filter>APP</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

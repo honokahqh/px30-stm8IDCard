@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E916E754-5581-9BCB-9EBF-4C710A697920}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ZK_Draven</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Debug\</OutDir>
+    <IntDir>obj\Debug\</IntDir>
+    <TargetName>ZK_Draven</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Release\</OutDir>
+    <IntDir>obj\Release\</IntDir>
+    <TargetName>ZK_Draven</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <IncludePath>$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$PROJ_DIR$;..\APP;..\BSP;..\STM8S_Driver\inc;..\ProtoOS;..\MB_Slaver;..\MB_Slaver\PhysicalDrive;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_IAR_;__ICCARM__;_Pragma(x)=;__interrupt=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\APP\app.h" />
+    <ClInclude Include="..\APP\appValue.h" />
+    <ClInclude Include="..\APP\stm8s.h" />
+    <ClInclude Include="..\APP\stm8s_conf.h" />
+    <ClInclude Include="..\APP\stm8s_exti.h" />
+    <ClInclude Include="..\APP\stm8s_gpio.h" />
+    <ClInclude Include="..\APP\stm8s_it.h" />
+    <ClInclude Include="..\APP\stm8s_tim2.h" />
+    <ClInclude Include="..\APP\upData.h" />
+    <ClInclude Include="..\BSP\bsp.h" />
+    <ClInclude Include="..\BSP\bsp_clock.h" />
+    <ClInclude Include="..\BSP\bsp_dog.h" />
+    <ClInclude Include="..\BSP\bsp_Manchester.H" />
+    <ClInclude Include="..\BSP\bsp_rgb.h" />
+    <ClInclude Include="..\BSP\bsp_stEEPROM.h" />
+    <ClInclude Include="..\MB_Slaver\modbusSlaver.h" />
+    <ClInclude Include="..\MB_Slaver\PhysicalDrive\STM8usart1.h" />
+    <ClInclude Include="..\ProtoOS\lc-addrlabels.h" />
+    <ClInclude Include="..\ProtoOS\lc-switch.h" />
+    <ClInclude Include="..\ProtoOS\lc.h" />
+    <ClInclude Include="..\ProtoOS\pt-sem.h" />
+    <ClInclude Include="..\ProtoOS\pt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\APP\app.c" />
+    <ClCompile Include="..\APP\appValue.c" />
+    <ClCompile Include="..\APP\main.c" />
+    <ClCompile Include="..\APP\stm8s_exti.c" />
+    <ClCompile Include="..\APP\stm8s_gpio.c" />
+    <ClCompile Include="..\APP\stm8s_it.c" />
+    <ClCompile Include="..\APP\stm8s_tim2.c" />
+    <ClCompile Include="..\APP\upData.c" />
+    <ClCompile Include="..\BSP\bsp.c" />
+    <ClCompile Include="..\BSP\bsp_clock.c" />
+    <ClCompile Include="..\BSP\bsp_dog.c" />
+    <ClCompile Include="..\BSP\bsp_Manchester.c" />
+    <ClCompile Include="..\BSP\bsp_rgb.c" />
+    <ClCompile Include="..\BSP\bsp_stEEPROM.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Core.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Function.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Map.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Memory.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Physical.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Port.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_Str.c" />
+    <ClCompile Include="..\MB_Slaver\MBS_User.c" />
+    <ClCompile Include="..\MB_Slaver\PhysicalDrive\STM8usart1.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
